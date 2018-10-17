@@ -1,0 +1,117 @@
+<head>
+	<title>Direnç Hesaplayici</title>
+	<meta charset="utf-8"/>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script src="js/renk-hesaplayici.js"></script>
+
+</head>
+<body>
+	<div class="sayfa">
+		<div class="bolum">
+			<form>
+				<p class="satir satir-x">
+					<label class="lbly">Renk Sayısı</label>
+					<select id="renk-sayisi" class="slct" onchange = "RenkSayisi()" >
+						<option value="0">Seçiniz</option>
+						<option value="4">4 Renk</option>
+						<option value="5">5 Renk</option>
+						<option value="6">6 Renk</option>
+					</select>
+				</p>
+				<p class="satir" id="r1">
+					<label class="lbly">Renk 1</label>
+					<select id="renk1" class="slct" onchange = "KatSayi()">
+						<option>Seçiniz</option>
+						<option value="1">Kahverengi</option>
+						<option value="2">Kırmızı</option>
+						<option value="3">Turuncu</option>
+						<option value="4">Sarı</option>
+						<option value="5">Yeşil</option>
+						<option value="6">Mavi</option>
+						<option value="7">Mor</option>
+						<option value="8">Gri</option>
+						<option value="9">Beyaz</option>
+					</select>
+				</p>
+				<p class="satir" id="r2">
+					<label class="lbly">Renk 2</label>
+					<select id="renk2" class="slct" onchange = "KatSayi()">
+						<option>Seçiniz</option>
+						<option value="0">Siyah</option>
+						<option value="1">Kahverengi</option>
+						<option value="2">Kırmızı</option>
+						<option value="3">Turuncu</option>
+						<option value="4">Sarı</option>
+						<option value="5">Yeşil</option>
+						<option value="6">Mavi</option>
+						<option value="7">Mor</option>
+						<option value="8">Gri</option>
+						<option value="9">Beyaz</option>
+					</select>
+				</p>
+				<p class="satir" id="r3">
+					<label class="lbly">Renk 3</label>
+					<select id="renk3" class="slct" onchange = "KatSayi()">
+						<option>Seçiniz</option>
+						<option value="0">Siyah</option>
+						<option value="1">Kahverengi</option>
+						<option value="2">Kırmızı</option>
+						<option value="3">Turuncu</option>
+						<option value="4">Sarı</option>
+						<option value="5">Yeşil</option>
+						<option value="6">Mavi</option>
+						<option value="7">Mor</option>
+						<option value="8">Gri</option>
+						<option value="9">Beyaz</option>
+					</select>
+				</p>
+				<p class="satir" id="r4">
+					<label class="lbly"><a id="lbl1">Renk 4</a></label>
+					<select id="carpan" class="slct" onchange = "Carpan()">
+						<option>Seçiniz</option>
+						<option value="1">Siyah</option>
+							<option value="10">Kahverengi</option>
+							<option value="100">Kırmızı</option>
+							<option value="1000">Turuncu</option>
+							<option value="10000">Sarı</option>
+							<option value="100000">Yeşil</option>
+							<option value="1000000">Mavi</option>
+							<option value="10000000">Mor</option>
+							<option value="0.1">Altın</option>
+							<option value="0.01">Gümüş</option>
+						</select>
+				</p>
+				<p class="satir" id="r5">
+					<label class="lbly"><a id="lbl2">Renk 5</a></label>
+					<select id="tolerans" class="slct" onchange="Carpan()">
+						<option>Seçiniz</option>
+						<option value="± %1">Kahverengi</option>
+						<option value="± %2">Kırmızı</option>
+						<option value="± %0.5">Yeşil</option>
+						<option value="± %0.25">Mavi</option>
+						<option value="± %0.1">Mor</option>
+						<option value="± %0.05">Gri</option>
+						<option value="± %5">Altın</option>
+						<option value="± %10">Gümüş</option>
+					</select>
+				</p>
+				<p class="satir" id="r6">
+					<label class="lbly"><a id="lbl3">Renk 6</a></label>
+					<select id="sicaklik-katsayisi" class="slct" onchange="Carpan()">
+						<option>Seçiniz</option>
+						<option value="100 ppm">Kahverengi</option>
+						<option value="50 ppm">Kırmızı</option>
+						<option value="15 ppm">Turuncu</option>
+						<option value="25 ppm">Sarı</option>
+					</select>
+				</p>
+			</form>
+		</div>
+		<div class="bolum">
+			<p class="satir satir-x"><label class="lbly">DEĞER</label><label class="sonuc" id="deger"></label></p>
+			<p class="satir satir-x"><label class="lbly">TOLERANS</label><label class="sonuc" id="tlrns"></label></p>
+			<p class="satir satir-x"><label class="lbly">SICAKLIK KATS.</label><label class="sonuc" id="scklk"></label></p>
+		</div>
+	</div>
+</body>

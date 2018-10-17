@@ -1,0 +1,44 @@
+	.sayfa{
+		max-width: 980px;
+		width: 100%;
+		margin: auto;
+	}
+	.bolum{
+		max-width:450px;
+		width: 100%;
+		float: left;
+		border: solid #88ffff;
+	}
+	.bolum img{
+		width: 100%;
+	}
+	.lbly{
+		max-width: 150px;
+		width: 100%;
+		font-size: 14px;
+	}
+	.slct {
+		max-width: 150px;
+		width: 100%;
+		font-size: 14px;
+		float: right;
+		margin-top: -2px;
+	}
+	.satir{
+		background-color: #99d2c5;
+		padding: 10px;
+		margin: 5px;
+		display: none;
+	}
+	.satir-x{
+		display: block;
+	}
+	.sonuc{
+		max-width: 100px;
+		width: 100%;
+		font-size: 14px;
+		float: right;
+		margin-top: -3px;
+		background-color: #fff;
+		padding: 3px;
+	}
